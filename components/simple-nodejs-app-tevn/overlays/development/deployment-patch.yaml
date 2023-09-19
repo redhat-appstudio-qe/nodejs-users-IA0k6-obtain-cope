@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-tevn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-npyv-tenant/nodejs-users/simple-nodejs-app-tevn@sha256:781162460fcd4cc6b11ad07baac6b782f89cb27bed11d83103fefb726eedd394
+        name: my-nodejs
+        resources: {}
+status: {}
